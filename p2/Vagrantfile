@@ -1,8 +1,8 @@
 Vagrant.configure("2") do |config|
     # configuration of the machine provider
     config.vm.provider "virtualbox" do |v|
-        v.memory = 1024
-        v.cpus = 1
+        v.cpus = 3
+        v.memory = 2048
     end
     
     #copy the configs folder to the guest machine
