@@ -1,0 +1,1 @@
+kubectl port-forward -n argocd svc/argocd-server 9000:443 >> /dev/null
