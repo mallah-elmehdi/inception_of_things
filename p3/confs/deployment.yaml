@@ -4,7 +4,7 @@ metadata:
   name: myapp
   namespace: dev
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: myapp
@@ -15,10 +15,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: othmanmallah/web-app
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
+        image: wil42/playground:v1
         ports:
-        - containerPort: 3000
+        - containerPort: 8888
