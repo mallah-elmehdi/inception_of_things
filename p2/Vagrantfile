@@ -5,8 +5,8 @@ Vagrant.configure("2") do |config|
         v.memory = 2048
     end
     
-    #copy the configs folder to the guest machine
-    config.vm.provision "file", source: "./configs", destination: "~/configs"
+    #copy the confs folder to the guest machine
+    config.vm.provision "file", source: "./confs", destination: "~/confs"
   
     # the machines operating system
     config.vm.box = "bento/ubuntu-22.04"
