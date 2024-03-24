@@ -29,5 +29,6 @@ echo ""
 echo "------------------------------------- COPY TOKEN TO SYNC FOLDER"
 echo ""
 
+sudo mkdir /vagrant/confs
 sudo cp /var/lib/rancher/k3s/server/node-token /vagrant/confs
 clear
